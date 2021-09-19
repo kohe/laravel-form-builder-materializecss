@@ -1,0 +1,20 @@
+{
+  "name": "kohe/laravel-form-builder-materializecss",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Kohe\\LaravelFormBuilderMaterializecss\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "kohe",
+      "email": "twelveleven@gmail.com"
+    }
+  ],
+  "require": {
+    "laravel/framework": "8.*",
+    "kris/laravel-form-builder": "^1.40"
+  }
+}
