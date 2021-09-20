@@ -1,20 +1,36 @@
 {
   "name": "kohe/laravel-form-builder-materializecss",
+  "description": "Laravel form builder for Materialize CSS",
+  "keywords": [
+    "laravel",
+    "materializecss"
+  ],
   "type": "library",
   "license": "MIT",
-  "autoload": {
-    "psr-4": {
-      "Kohe\\LaravelFormBuilderMaterializecss\\": "src/"
-    }
-  },
   "authors": [
     {
       "name": "kohe",
       "email": "twelveleven@gmail.com"
     }
   ],
+  "autoload": {
+    "psr-4": {
+      "Kohe\\LaravelFormBuilderMaterializecss\\": "src/"
+    }
+  },
   "require": {
     "laravel/framework": "8.*",
     "kris/laravel-form-builder": "^1.40"
-  }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    },
+    "laravel": {
+      "providers": [
+        "Kohe\\LaravelFormBuilderMaterializecss\\LaravelFormBuilderMaterializecssServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev"
 }

@@ -3,12 +3,12 @@
 return [
 
     'defaults' => [
-        'wrapper_class'       => 'form-group',
+        'wrapper_class'       => 'input-field col s12',
         'wrapper_error_class' => '',
         'label_class'         => '',
-        'field_class'         => 'form-control',
-        'field_error_class'   => 'is-invalid',
-        'help_block_class'    => 'form-text text-muted',
+        'field_class'         => '',
+        'field_error_class'   => 'invalid',
+        'help_block_class'    => 'helper-text',
         'error_class'         => 'invalid-feedback',
         'required_class'      => 'required',
 
@@ -72,7 +72,6 @@ return [
     'default_namespace' => '',
 
     'custom_fields' => [
-        //
     ],
 
 ];

@@ -23,12 +23,14 @@ class LaravelFormBuilderMaterializecssServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->publishes(
-            [
-                __DIR__ . '/../config/laravel-form-builder.php' => config_path('laravel-form-builder.php'),
-                __DIR__ . '/../resources/views' => resource_path('views/vendor/laravel-form-builder'),
-            ],
-            'laravel-form-builder-materializecss'
-        );
+        if ($this->app->runningInConsole()) {
+            $this->publishes(
+                [
+                    __DIR__ . '/../config' => config_path(),
+                    __DIR__ . '/../resources/views' => resource_path('views/vendor/laravel-form-builder'),
+                ],
+                'laravel-form-builder-materializecss'
+            );
+        }
     }
 }
